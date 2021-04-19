@@ -4,7 +4,7 @@ const SLACK_WORKSPACE_NAME    = "ここにSlackワークスペース名を入力
 const SLACK_HISTORY_GET_COUNT = 100; // 1度に取得するメッセージ数
 
 function getSlackHistory(){
-  var url = "https://slack.com/api/channels.history";
+  var url = "https://slack.com/api/conversations.history";
   var payload = {
     "token": SLACK_API_TOKEN,
     "channel": SLACK_CHANNEL_ID,
